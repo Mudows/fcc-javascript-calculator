@@ -4,10 +4,46 @@ This project was developed for the [freeCodeCamp Front End Development Libraries
 
 ## Techs Used
 
-- React.js
-- Bootstrap
-- Redux
-- JavaScript
+<table>
+  <tr>
+    <td align="center" height="108" width="108">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+        width="48"
+        height="48"
+        alt="Bootstrap"
+      />
+      <p><strong>Bootstrap</strong></p>
+    </td>
+    <td align="center" height="108" width="108">
+      <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+          width="48"
+          height="48"
+          alt="JavaScript"
+        />
+      <p><strong>JavaScript</strong></p>
+    </td>
+    <td align="center" height="108" width="108">
+      <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          width="48"
+          height="48"
+          alt="React"
+        />
+      <p><strong>React</strong></p>
+    </td>
+    <td align="center" height="108" width="108">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+        width="48"
+        height="48"
+        alt="Redux"
+      />
+      <p><strong>Redux</strong></p>
+    </td>
+  </tr>
+</table>
 
 ## Project Requirements
 
