@@ -4,7 +4,7 @@ This project was developed for the [freeCodeCamp Front End Development Libraries
 
 ## Techs Used
 
-<table>
+<table align="center">
   <tr>
     <td align="center" height="108" width="108">
       <img

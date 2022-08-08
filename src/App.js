@@ -1,9 +1,12 @@
+import { Provider } from 'react-redux';
+import store from './redux/store'
+
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <p>JavaScript Calculator</p>
+    <Provider store={ store }>
+      <p>JavaScript Calculator</p>
+    </Provider>
   );
 }
-
-export default App;
