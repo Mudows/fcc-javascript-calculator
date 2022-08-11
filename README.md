@@ -8,15 +8,6 @@ This project was developed for the [freeCodeCamp Front End Development Libraries
   <tr>
     <td align="center" height="108" width="108">
       <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-        width="48"
-        height="48"
-        alt="Bootstrap"
-      />
-      <p><strong>Bootstrap</strong></p>
-    </td>
-    <td align="center" height="108" width="108">
-      <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
           width="48"
           height="48"
@@ -41,6 +32,15 @@ This project was developed for the [freeCodeCamp Front End Development Libraries
         alt="Redux"
       />
       <p><strong>Redux</strong></p>
+    </td>
+    <td align="center" height="108" width="108">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+        width="48"
+        height="48"
+        alt="Sass"
+      />
+      <p><strong>Sass</strong></p>
     </td>
   </tr>
 </table>
