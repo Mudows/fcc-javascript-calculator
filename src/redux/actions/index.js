@@ -1,4 +1,4 @@
-export const defaultAction = (param) => ({
-  type: 'DEFAULT_ACTION',
-  param,
+export const updateInput = (newInput) => ({
+  type: 'UPDATE_INPUT',
+  newInput,
 });

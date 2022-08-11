@@ -2,26 +2,37 @@ import React from "react";
 import { connect } from "react-redux";
 import SmallBtn from "./SmallBtn";
 import WideBtn from "./WideBtn";
+import { updateInput } from '../../redux/actions/index'
 
 class Keyboard extends React.Component {
+  handleClick = (event) => {
+    const { dispatch } = this.props;
+    const data = event.target.innerHTML;
+    dispatch(updateInput(data));
+  }
+
   render() {
+    const signArray = [
+      {sign: '.', desc: 'decimal'},
+      {sign: '+', desc: 'add'},
+      {sign: '7', desc: 'seven'},
+      {sign: '8', desc: 'eight'},
+      {sign: '9', desc: 'nine'},
+      {sign: '-', desc: 'subtract'},
+      {sign: '4', desc: 'four'},
+      {sign: '5', desc: 'five'},
+      {sign: '6', desc: 'six'},
+      {sign: 'x', desc: 'multiply'},
+      {sign: '1', desc: 'one'},
+      {sign: '2', desc: 'two'},
+      {sign: '3', desc: 'three'},
+      {sign: '/', desc: 'divide'}]
     return (
       <div className="keyboard">
-        <WideBtn sign={ 'AC' } btnId={'clear'} />
-        <SmallBtn sign={ "." } btnId={'decimal'} />
-        <SmallBtn sign={ '+' } btnId={'add'} />
-        <SmallBtn sign={ 7 } btnId={'seven'} />
-        <SmallBtn sign={ 8 } btnId={'eight'} />
-        <SmallBtn sign={ 9 } btnId={'nine'} />
-        <SmallBtn sign={ '-' } btnId={'subtract'} />
-        <SmallBtn sign={ 4 } btnId={'four'} />
-        <SmallBtn sign={ 5 } btnId={'five'} />
-        <SmallBtn sign={ 6 } btnId={'six'} />
-        <SmallBtn sign={ 'x' } btnId={'multiply'} />
-        <SmallBtn sign={ 1 } btnId={'one'} />
-        <SmallBtn sign={ 2 } btnId={'two'} />
-        <SmallBtn sign={ 3 } btnId={'three'} />
-        <SmallBtn sign={ '/' } btnId={'divide'} />
+        <WideBtn sign={ 'AC' } btnId={'clear'} handleClick={ this.handleClick } />
+        {signArray.map((obj) => (
+          <SmallBtn sign={ obj.sign } btnId={ obj.desc } handleClick={ this.handleClick } />
+        ))}
         <WideBtn sign={ 0 } btnId={'zero'} />
         <WideBtn sign={ "=" } btnId={'equals'} />
       </div>

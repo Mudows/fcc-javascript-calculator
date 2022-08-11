@@ -4,11 +4,13 @@ const INITIAL_STATE = {
   expressionResult: 0
 };
 
-const placeHolderReducer = (state = INITIAL_STATE, action) => {
+const javaScriptCalculator = (state = INITIAL_STATE, action) => {
  switch(action.type) {
-   default:
+  case 'UPDATE_INPUT':
+    return { ...state, expressionInput: action.newInput };
+  default:
     return state;
  }
 }
 
-export default placeHolderReducer;
+export default javaScriptCalculator;
