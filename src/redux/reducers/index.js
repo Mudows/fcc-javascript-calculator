@@ -1,7 +1,7 @@
 const INITIAL_STATE = {
   expressionInput: 0,
   expressionRequested: 0,
-  expressionResult: 0
+  expressionResult: 0.0
 };
 
 const javaScriptCalculator = (state = INITIAL_STATE, action) => {
@@ -10,12 +10,13 @@ const javaScriptCalculator = (state = INITIAL_STATE, action) => {
     state.expressionRequested += (action.newInput);
     return { ...state, expressionInput: action.newInput };
   case 'CLEAR_INPUT':
-    return { expressionInput: '0', expressionRequested: '', expressionResult: 0 };
+    return { expressionInput: '0', expressionRequested: 0, expressionResult: 0 };
   case 'CALCULATE':
-    const expression = Number(state.expressionRequested);
-    state.expressionInput = expression;
-    console.log(expression);
-    return state;
+    const numbersString = state.expressionRequested.split('+');
+    const numbers = numbersString.map((noStr) => +noStr);
+    const result = 0.0;
+    const finalResult =  numbers.reduce((acc, no) => acc + no, result);
+    return { ...state, expressionInput: finalResult };
   default:
     return state;
  }

@@ -24,7 +24,7 @@
 }
 
 #bottom-display {
-  font-size: 18pt;
+  font-size: 24pt;
 }
 
 .keyboard {
@@ -39,7 +39,7 @@
   width: 48px;
   margin: 3px;
   background-color: gray;
-  font-size: 14pt;
+  font-size: 24pt;
   text-align: center;
   border-radius: 5px;
   padding-top: 6px;
@@ -49,6 +49,16 @@
 
 .btn-wide {
   width: 102px;
+}
+
+#clear {
+  background-color: #800000;
+  color: black;
+}
+
+#equals {
+  background-color: #3c6491;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=App.css.map */
