@@ -13,10 +13,6 @@ const javaScriptCalculator = (state = INITIAL_STATE, action) => {
   case 'CLEAR_INPUT':
     return { expressionInput: '0', expressionRequested: 0, expressionResult: 0 };
   case 'CALCULATE':
-    /* const numbersString = state.expressionRequested.split('+');
-    const numbers = numbersString.map((noStr) => +noStr);
-    const result = 0.0;
-    const finalResult =  numbers.reduce((acc, no) => acc + no, result); */
     return { ...state, expressionInput: expressionParser(state.expressionRequested) };
   default:
     return state;

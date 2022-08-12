@@ -48,7 +48,7 @@ class Keyboard extends React.Component {
         <WideBtn sign={'AC'} btnId={'clear'} handleClick={this.allClear} />
         {signArray.map((obj) => (
           <SmallBtn
-            key={obj.sign}
+            key={obj.desc}
             sign={obj.sign}
             btnId={obj.desc}
             handleClick={this.handleClick}
