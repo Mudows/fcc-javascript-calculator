@@ -6,9 +6,9 @@ class Display extends React.Component {
   render() {
     const { expressionInput, expressionRequested} = this.props;
     return(
-      <div id="display">
-        <div id="top-display">{ expressionRequested }</div>
-        <div id="bottom-display">{ expressionInput }</div>
+      <div id="full-display">
+        <p id="top-display">{ expressionRequested }</p>
+        <p id="display">{ expressionInput }</p>
       </div>
     )
   }

@@ -1,9 +1,14 @@
+@import url(//db.onlinewebfonts.com/c/1691c10174792612d1acc3782aac2038?family=DesignSystemAW01-700I)
+
 @font-face
   font-family: 'Digital'
   src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot')
   src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix') format('embedded-opentype'), url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2') format('woff2'), url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff') format('woff'), url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf') format('truetype'), url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7') format('svg')
 
 $btnShadow: -2px 2px 3px 0 #171412
+
+body
+  background-color: #c0c0c0
 
 #calculator
   width: 240px
@@ -13,27 +18,35 @@ $btnShadow: -2px 2px 3px 0 #171412
   border-radius: 5px
   padding: 10px
   box-shadow: 0 0 3px 1px #171412
+  span
+    font-size: 10pt
+    font-family: 'DesignSystemAW01-700I'
+    color: #b8860b
 
-#display
+#full-display
   font-family: 'Digital'
   background-color: #171412
-  color: white
+  color: #ff9933
   text-align: end
   padding: 3px
-  box-shadow: inset 0 0 12px 2px grey
-  div
+  box-shadow: inset 0 0 12px 3px grey
+  p
     margin: 10px 0
-    margin-right: 5px
+    margin-right: 10px
 
-#bottom-display
+#display
   font-size: 24pt
+  color: whitesmoke
+
+#top-display
+  height: 6px
 
 .keyboard
   display: flex
   flex-direction: row
   flex-wrap: wrap
   width: 216px
-  margin: auto
+  margin: 10px auto 10px auto
 
 .btn-small
   $padding: 6px
@@ -46,6 +59,9 @@ $btnShadow: -2px 2px 3px 0 #171412
   padding-top: $padding
   padding-bottom: $padding
   box-shadow: $btnShadow
+
+#add, #subtract, #multiply, #divide
+  background-color: #5c5c5c
 
 .btn-wide
   @extend .btn-small
