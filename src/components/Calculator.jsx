@@ -10,6 +10,7 @@ class Calculator extends React.Component {
         <span>Mudow's JS Calculator</span>
         <Display />
         <Keyboard />
+        <div id="signature">Designed and coded by Diego M. Cezar</div>
       </div>
     )
   }
