@@ -16,6 +16,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 3px 1px #171412;
+  border: 4px solid #b8860b;
 }
 #calculator span {
   font-size: 10pt;
@@ -26,6 +27,7 @@ body {
 #full-display {
   font-family: "Digital";
   background-color: #171412;
+  border: 3px solid #b8860b;
   color: #ff9933;
   text-align: end;
   padding: 3px;
